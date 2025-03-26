@@ -1,0 +1,13 @@
+title: Calculus I - Engineering Calculations with Python
+author: Maikl Awad
+logo: calculus.png
+
+execute:
+  execute_notebooks: force
+
+latex:
+  latex_documents:
+    targetname: book.tex
+
+bibtex_bibfiles:
+  - references.bib
