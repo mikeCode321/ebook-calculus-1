@@ -11,3 +11,7 @@ latex:
 
 bibtex_bibfiles:
   - references.bib
+
+html:
+  favicon: calculus.png
+

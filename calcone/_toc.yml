@@ -1,7 +1,25 @@
 format: jb-book
 root: intro
-chapters:
-- file: markdown
-- file: notebooks
-- file: markdown-notebooks
-- file: mymarkdownfile
+parts:
+  - caption: Preliminaries 
+    chapters:
+        - file: preliminaries/ch1/basic-operation-and-manipulation.md
+          sections:
+            - file: preliminaries/ch1/fundamentals-of-algebra.md
+            - file: preliminaries/ch1/algebraic-expressions.md
+
+        - file: preliminaries/ch2/introduction-to-functions.md
+
+        - file: preliminaries/ch3/solving-equations-and-inequalities.md
+          
+        - file: preliminaries/ch4/advanced-topics-and-applications.md
+        
+        - file: preliminaries/ch5/essentials.md
+  
+  - caption: Calculus - The Derivative
+    
+
+      # - caption: Advanced Topics and Applications
+      #   chapters:
+      #     - file: logarithms
+      #     - file: combining-evaluation-graphing-and-solving

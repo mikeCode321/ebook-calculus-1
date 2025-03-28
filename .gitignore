@@ -1,0 +1,42 @@
+# Python bytecode files
+*.pyc
+*.pyo
+__pycache__/
+
+# Virtual environment
+venv/
+env/
+*.env
+
+# VS Code settings folder
+.vscode/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Pytest and coverage reports
+.coverage
+*.coveragerc
+coverage.xml
+nosetests.xml
+test_*.xml
+
+# Distribution/Packaging
+build/
+dist/
+*.egg-info/
+
+# IDE specific files
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# macOS specific files
+.DS_Store
+
+# Logs
+*.log
+
+# Temporary files
+*.swp
+*~
