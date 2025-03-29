@@ -60,6 +60,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'preliminaries/ch1/fundamentals-of-algebra';</script>
     <link rel="icon" href="../../_static/calculus.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -231,11 +233,59 @@
 
 
 
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li>
+<button onclick="initThebeSBT()"
+  class="btn btn-sm btn-launch-thebe dropdown-item"
+  title="Launch Thebe"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-play"></i>
+  </span>
+<span class="btn__text-container">Live Code</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
 <div class="dropdown dropdown-download-buttons">
   <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
     <i class="fas fa-download"></i>
   </button>
   <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/preliminaries/ch1/fundamentals-of-algebra.ipynb" target="_blank"
+   class="btn btn-sm btn-download-notebook-button dropdown-item"
+   title="Download notebook file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-code"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
       
       
       
@@ -325,6 +375,14 @@
             </div>
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exponents">Exponents</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rules-for-exponentation">Rules For Exponentation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions-for-exponentation">Definitions For Exponentation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem">Example Problem</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#factoring">Factoring</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fractions">Fractions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst">What is MyST?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-roles-and-directives">Sample Roles and Directives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>
@@ -342,10 +400,140 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="fundamentals-of-algebra">
 <h1>Fundamentals of Algebra<a class="headerlink" href="#fundamentals-of-algebra" title="Link to this heading">#</a></h1>
+<section id="exponents">
+<h2>Exponents<a class="headerlink" href="#exponents" title="Link to this heading">#</a></h2>
+<div class="math notranslate nohighlight">
+\[
+  2^{3} = 8; base^{exponent}
+\]</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">answer</span> <span class="o">=</span> <span class="mi">2</span><span class="o">**</span><span class="mi">3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">answer</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>8
+</pre></div>
+</div>
+</div>
+</div>
+<p>Exponential notation consists of two parts: the <strong>base</strong> and the <strong>exponent</strong>. The exponent shows how many times to multiply the base by itself. In this case, <span class="math notranslate nohighlight">\(2^3\)</span> means multiplying 2 by itself three times: 2 × 2 × 2 = 8.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When we say ‘<em>base to the power of n</em>,’ we are referring to raising the base to an exponent.</p>
+</div>
+<section id="rules-for-exponentation">
+<h3>Rules For Exponentation<a class="headerlink" href="#rules-for-exponentation" title="Link to this heading">#</a></h3>
+<div class="sd-container-fluid sd-sphinx-override sd-mb-4 docutils">
+<div class="sd-row sd-g-2 sd-g-xs-2 sd-g-sm-2 sd-g-md-2 sd-g-lg-2 docutils">
+<div class="sd-col sd-d-flex-column sd-border-1 docutils">
+<p><strong>Product of Powers Rule</strong><br />
+<span class="math notranslate nohighlight">\(base^m * base^n = base^{m+n}\)</span><br />
+When multiplying powers with the same base, add the exponents.</p>
+</div>
+<div class="sd-col sd-d-flex-column sd-border-1 docutils">
+<p><strong>Quotient of Powers Rule</strong><br />
+<span class="math notranslate nohighlight">\(\frac{base^m}{base^n} = base^{m-n}\)</span><br />
+When dividing powers with the same base, subtract the exponents.</p>
+</div>
+<div class="sd-col sd-d-flex-column sd-border-1 docutils">
+<p><strong>Power of a Power Rule</strong><br />
+<span class="math notranslate nohighlight">\((base^m)^n = base^{m * n}\)</span><br />
+When raising a power to another power, multiply the exponents.</p>
+</div>
+<div class="sd-col sd-d-flex-column sd-border-1 docutils">
+<p><strong>Power of a Product Rule</strong><br />
+<span class="math notranslate nohighlight">\((ab)^n = a^n * b^n\)</span><br />
+When raising a product to a power, raise each factor to the power.</p>
+</div>
+<div class="sd-col sd-d-flex-column sd-border-1 docutils">
+<p><strong>Power of a Quotient Rule</strong><br />
+<span class="math notranslate nohighlight">\((\frac{a}{b})^n = \frac{a^n}{b^n}\)</span><br />
+When raising a quotient to a power, raise both the numerator and denominator to the power.</p>
+</div>
+<div class="sd-col sd-d-flex-column sd-border-1 docutils">
+<p><strong>Exponent of a Fraction Rule</strong><br />
+<span class="math notranslate nohighlight">\(a^{\frac{exp}{root}} = \sqrt[root]{a^{exp}}\)</span> or <span class="math notranslate nohighlight">\((\sqrt[root]{a})^{exp}\)</span><br />
+A fractional exponent represents both a root and a power.</p>
+</div>
+</div>
+</div>
+</section>
+<section id="definitions-for-exponentation">
+<h3>Definitions For Exponentation<a class="headerlink" href="#definitions-for-exponentation" title="Link to this heading">#</a></h3>
+<p>(1) <span class="math notranslate nohighlight">\(base^0 = 1\)</span><br>
+Proof:
+Lets say we have a case where <span class="math notranslate nohighlight">\(base^{n}\)</span> * <span class="math notranslate nohighlight">\(base^{-n}\)</span> =&gt; <span class="math notranslate nohighlight">\(base^{n}/base^{n}\)</span> = 1, so by using
+the quotient of powers property we see the <span class="math notranslate nohighlight">\(base^{n - n = 0} = 1\)</span></p>
+<p>(2) <span class="math notranslate nohighlight">\(base^1 = base\)</span><br></p>
+<p>(3) <span class="math notranslate nohighlight">\(base^n\)</span> = <span class="math notranslate nohighlight">\(base_{1}\)</span> * <span class="math notranslate nohighlight">\(base_{2}\)</span> * …. * <span class="math notranslate nohighlight">\(base_{n}\)</span><br></p>
+<p>(4a) <span class="math notranslate nohighlight">\(base^{-1}\)</span> = <span class="math notranslate nohighlight">\(1/base^{1}\)</span><br>
+(4b) <span class="math notranslate nohighlight">\(base^{-n}\)</span> = <span class="math notranslate nohighlight">\(1/base^{n}\)</span><br>
+A base raised to a negative exponent is equivalent to the reciprocal of the base raised to the positive exponent.</p>
+<p>Proof:<br>
+<span class="math notranslate nohighlight">\(
+\frac{base^n}{base^n} = base^{n-n} = base^0 = 1
+\)</span>
+Since <span class="math notranslate nohighlight">\(base^0 = 1\)</span>, we have:</p>
+<p><span class="math notranslate nohighlight">\(
+base^{-n} = \frac{base^0}{base^n} = \frac{1}{base^n}
+\)</span></p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">base</span> <span class="o">=</span> <span class="mi">5</span>
+
+<span class="n">base_0</span> <span class="o">=</span> <span class="n">base</span> <span class="o">**</span> <span class="mi">0</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Rule (1) base^0 = </span><span class="si">{</span><span class="n">base_0</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">base_1</span> <span class="o">=</span> <span class="n">base</span> <span class="o">**</span> <span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Rule (2) base^1 = </span><span class="si">{</span><span class="n">base_1</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">n</span> <span class="o">=</span> <span class="mi">3</span>
+<span class="n">base_n</span> <span class="o">=</span> <span class="n">base</span> <span class="o">**</span> <span class="n">n</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Rule (3) base^n = </span><span class="si">{</span><span class="n">base_n</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">base_neg_1</span> <span class="o">=</span> <span class="n">base</span> <span class="o">**</span> <span class="o">-</span><span class="mi">1</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Rule (4a) base^-1 = </span><span class="si">{</span><span class="n">base_neg_1</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+
+<span class="n">base_neg_n</span> <span class="o">=</span> <span class="n">base</span> <span class="o">**</span> <span class="o">-</span><span class="n">n</span>
+<span class="nb">print</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;Rule (4b) base^-</span><span class="si">{</span><span class="n">n</span><span class="si">}</span><span class="s2"> = </span><span class="si">{</span><span class="n">base_neg_n</span><span class="si">}</span><span class="s2">&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Rule (1) base^0 = 1
+Rule (2) base^1 = 5
+Rule (3) base^n = 125
+Rule (4a) base^-1 = 0.2
+Rule (4b) base^-3 = 0.008
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="example-problem">
+<h3>Example Problem<a class="headerlink" href="#example-problem" title="Link to this heading">#</a></h3>
+<p>Solve the following problem:</p>
+<p>What is ( 5^{\frac{3}{2}} )?</p>
+<details>
+  <summary>Click here to reveal the answer</summary>
+<p>The solution is:
+<span class="math notranslate nohighlight">\(5^{\frac{3}{2}} = \sqrt{5^3} = \sqrt{125} \approx 11.18\)</span></p>
+</details>
+</section>
+</section>
+<section id="factoring">
+<h2>Factoring<a class="headerlink" href="#factoring" title="Link to this heading">#</a></h2>
+</section>
+<section id="fractions">
+<h2>Fractions<a class="headerlink" href="#fractions" title="Link to this heading">#</a></h2>
 <p>Whether you write your book’s content in Jupyter Notebooks (<code class="docutils literal notranslate"><span class="pre">.ipynb</span></code>) or
 in regular markdown files (<code class="docutils literal notranslate"><span class="pre">.md</span></code>), you’ll write in the same flavor of markdown
 called <strong>MyST Markdown</strong>.
 This is a simple file to help you get started and show off some syntax.</p>
+</section>
 <section id="what-is-myst">
 <h2>What is MyST?<a class="headerlink" href="#what-is-myst" title="Link to this heading">#</a></h2>
 <p>MyST stands for “Markedly Structured Text”. It
@@ -400,7 +588,7 @@ You can learn a lot more at <a class="reference external" href="https://jupyterb
     {
         requestKernel: true,
         binderOptions: {
-            repo: "binder-examples/jupyter-stacks-datascience",
+            repo: "executablebooks/jupyter-book",
             ref: "master",
         },
         codeMirrorConfig: {
@@ -461,6 +649,14 @@ You can learn a lot more at <a class="reference external" href="https://jupyterb
   </div>
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#exponents">Exponents</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#rules-for-exponentation">Rules For Exponentation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#definitions-for-exponentation">Definitions For Exponentation</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#example-problem">Example Problem</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#factoring">Factoring</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fractions">Fractions</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#what-is-myst">What is MyST?</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#sample-roles-and-directives">Sample Roles and Directives</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#citations">Citations</a></li>

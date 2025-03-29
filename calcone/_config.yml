@@ -15,3 +15,5 @@ bibtex_bibfiles:
 html:
   favicon: calculus.png
 
+launch_buttons:
+  thebe: true

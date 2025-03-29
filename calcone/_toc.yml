@@ -15,10 +15,7 @@ parts:
         - file: preliminaries/ch4/advanced-topics-and-applications.md
         
         - file: preliminaries/ch5/essentials.md
-  
-  - caption: Calculus - The Derivative
     
-
       # - caption: Advanced Topics and Applications
       #   chapters:
       #     - file: logarithms
