@@ -3,9 +3,9 @@ root: intro
 parts:
   - caption: Preliminaries 
     chapters:
-        - file: preliminaries/ch1/basic-operation-and-manipulation.md
+        - file: preliminaries/ch1/fundamentals-of-algebra.md
           sections:
-            - file: preliminaries/ch1/fundamentals-of-algebra.md
+            - file: preliminaries/ch1/exponents.md
             - file: preliminaries/ch1/algebraic-expressions.md
 
         - file: preliminaries/ch2/introduction-to-functions.md
