@@ -121,18 +121,20 @@ base_neg_n = base ** -n
 print(f"Rule (4b) base^-{n} = {base_neg_n}")
 ```
 
-##### Example Problem
+##### Practice Problems
 
-Solve the following problem:
-
-What is \( 5^{\frac{3}{2}} \)?
+Simplify: $3x(2x)^{3}(x^{-1})$
 
 <details>
-  <summary>Click here to reveal the answer</summary>
-  
-  The solution is:
-  $5^{\frac{3}{2}} = \sqrt{5^3} = \sqrt{125} \approx 11.18$
-  
+  <summary>Answer</summary>
+  $3x^{1}(2)^{3}(x)^{3}(\frac{1}{x^{1}})$ = $8(3x)(x^{3})(\frac{1}{x^{1}})$ = $8(3x)x^{3-1}$ = $24x(x^{2})$ = $24x^{3}$ 
+</details>
+
+Simplify: $(\frac{2^{-3}}{L})^{-2}$
+
+<details>
+  <summary>Answer</summary>
+  $\frac{2^{-3*-2}}{L^{-2}}$ = $\frac{2^{6}}{\frac{1}{L^{2}}}$ = $2^{6}L^{2}$ = $64L^{2}$
 </details>
 
 ## Factoring
