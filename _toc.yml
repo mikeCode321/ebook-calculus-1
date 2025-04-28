@@ -1,9 +1,0 @@
-format: jb-book
-root: intro
-parts:
-  - caption: Preliminaries 
-    chapters:
-        - file: preliminaries/ch1/fundamentals-of-algebra.md
-          sections:
-            - file: preliminaries/ch1/exponents.md
-            - file: preliminaries/ch1/factoring-and-fractions.md
