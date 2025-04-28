@@ -1,1 +1,0 @@
-# Solving Equations and Inequalities
