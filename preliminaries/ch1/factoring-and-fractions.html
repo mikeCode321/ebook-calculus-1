@@ -34,7 +34,7 @@
     <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css?v=a3416100" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css?v=13237357" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css?v=76b2166b" />
-    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css?v=be8a1c11" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css?v=4fa983c6" />
     <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.min.css?v=95c83b7e" />
   
@@ -60,6 +60,8 @@
     <script async="async" src="../../_static/sphinx-thebe.js?v=c100c467"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
     <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <script>DOCUMENTATION_OPTIONS.pagename = 'preliminaries/ch1/factoring-and-fractions';</script>
     <link rel="icon" href="../../_static/calculus.png"/>
     <link rel="index" title="Index" href="../../genindex.html" />
@@ -350,7 +352,9 @@
 <button class="btn btn-sm pst-navbar-icon search-button search-button__button pst-js-only" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
     <i class="fa-solid fa-magnifying-glass fa-lg"></i>
 </button>
-
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
 </div></div>
       
     </div>
@@ -366,6 +370,25 @@
     <div id="print-main-content">
         <div id="jb-print-toc">
             
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#factoring">Factoring</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#removing-common-factors">Removing Common Factors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">Exercises</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grouping-terms">Grouping Terms</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Exercises</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#factoring-quadratics">Factoring Quadratics</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fractions">Fractions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test2">TEST2</a></li>
+</ul>
+</li>
+</ul>
+            </nav>
         </div>
     </div>
 </div>
@@ -377,7 +400,80 @@
                   
   <section class="tex2jax_ignore mathjax_ignore" id="factoring-and-fractions">
 <h1>Factoring and Fractions<a class="headerlink" href="#factoring-and-fractions" title="Link to this heading">#</a></h1>
-<p>Coming soon…</p>
+<section id="factoring">
+<h2>Factoring<a class="headerlink" href="#factoring" title="Link to this heading">#</a></h2>
+<p>When we want to expand an expression in factored form we “un-multiply.” This is often useful when trying to simplify an expression. Another way to put it is reversing the distributive law.</p>
+<p>There are essentially 2 fundamental ways of expanding an expression. One of which is to directly remove a common factor from each of the terms in the expression.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>A <strong>term(s)</strong> is the building block of an algebraic expression. It can be:</p>
+<ul class="simple">
+<li><p>A <strong>constant</strong>: A fixed number without any variables (e.g., ( 5 )).</p></li>
+<li><p>A <strong>variable</strong>: A symbol representing an unknown value (e.g., ( x )).</p></li>
+<li><p>The <strong>product</strong> of numbers and variables (e.g., ( 3x ) or ( 2x^2 )).</p></li>
+</ul>
+</div>
+<section id="removing-common-factors">
+<h3>Removing Common Factors<a class="headerlink" href="#removing-common-factors" title="Link to this heading">#</a></h3>
+<p>(1) <span class="math notranslate nohighlight">\(ab + ac = a(b + c)\)</span> <br>
+(2) <span class="math notranslate nohighlight">\(-a-b = -(a + b)\)</span> <br>
+(3) <span class="math notranslate nohighlight">\((a-b) = -(b - a)\)</span> <br></p>
+<p>Notice that in the above expressions we are removing common factors such as <strong>a</strong> from expression 1 and <strong>-</strong> which is -1 from expressions 2 and 3. The 3rd expressions negative sign (-1) is factored out to reverse the order of subtraction, turning (a − b) into −(b − a).</p>
+<p>As a training exercise try distributing the common factor we took out on the right side of the expression (i.e., a(b+c)) and see if you end up with the left side of the expression.</p>
+</section>
+<section id="exercises">
+<h3>Exercises<a class="headerlink" href="#exercises" title="Link to this heading">#</a></h3>
+<p>(1) Simplify: <span class="math notranslate nohighlight">\(\frac{2}{3}x^{2}y + \frac{4}{3}xy\)</span></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(\frac{2}{3}xy(x + 2)\)</span></p>
+</div>
+</details><p>(2) Simplify: <span class="math notranslate nohighlight">\((2x + 1)x^3 - 3x(2x + 1)\)</span></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><span class="math notranslate nohighlight">\((2x + 1)(x^3 - 3x)\)</span> = <span class="math notranslate nohighlight">\(x(x^2 - 3)(2x + 1)\)</span></p>
+</div>
+</details><p>(3) Simplify: <span class="math notranslate nohighlight">\(-\frac{s^{2}t}{8w} - \frac{st^{2}}{16w}\)</span></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(-\frac{st}{8w}(s + \frac{t}{2})\)</span></p>
+</div>
+</details></section>
+<section id="grouping-terms">
+<h3>Grouping Terms<a class="headerlink" href="#grouping-terms" title="Link to this heading">#</a></h3>
+<p>There will be scenarios where all terms in an expression won’t have a common factor. What you can try to do first is; visually inspect the expression and group terms that are able to produce a common factor.</p>
+<p><strong>Example:</strong> <br>
+<span class="math notranslate nohighlight">\(x^{2} - hx - x + h\)</span> = <span class="math notranslate nohighlight">\((x^{2} - hx) - (x - h)\)</span> = <span class="math notranslate nohighlight">\(x(x - h) - (x - h)\)</span> = <span class="math notranslate nohighlight">\((x - h)(x - 1)\)</span></p>
+</section>
+<section id="id1">
+<h3>Exercises<a class="headerlink" href="#id1" title="Link to this heading">#</a></h3>
+<p>(1) Simplify: <span class="math notranslate nohighlight">\(-\frac{s^{2}t}{8w} - \frac{st^{2}}{16w}\)</span></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(-\frac{st}{8w}(s + \frac{t}{2})\)</span></p>
+</div>
+</details><p>(2) Simplify: <span class="math notranslate nohighlight">\(x^{5}y^{2} + 2y^{3} + 2x^{5} + 4y\)</span></p>
+<details class="sd-sphinx-override sd-dropdown sd-card sd-mb-3">
+<summary class="sd-summary-title sd-card-header">
+<span class="sd-summary-text">Answer</span><span class="sd-summary-state-marker sd-summary-chevron-right"><svg version="1.1" width="1.5em" height="1.5em" class="sd-octicon sd-octicon-chevron-right" viewBox="0 0 24 24" aria-hidden="true"><path d="M8.72 18.78a.75.75 0 0 1 0-1.06L14.44 12 8.72 6.28a.751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018l6.25 6.25a.75.75 0 0 1 0 1.06l-6.25 6.25a.75.75 0 0 1-1.06 0Z"></path></svg></span></summary><div class="sd-summary-content sd-card-body docutils">
+<p class="sd-card-text"><span class="math notranslate nohighlight">\(y^2(x^{5} + 2y) + (2x^{5} + 4y)\)</span> = <span class="math notranslate nohighlight">\(y^2(x^{5} + 2y) + 2(x^{5} + 2y)\)</span> = <span class="math notranslate nohighlight">\((x^{5} + 2y)(y^{2} + 2)\)</span></p>
+</div>
+</details></section>
+<section id="factoring-quadratics">
+<h3>Factoring Quadratics<a class="headerlink" href="#factoring-quadratics" title="Link to this heading">#</a></h3>
+</section>
+</section>
+<section id="fractions">
+<h2>Fractions<a class="headerlink" href="#fractions" title="Link to this heading">#</a></h2>
+<section id="test2">
+<h3>TEST2<a class="headerlink" href="#test2" title="Link to this heading">#</a></h3>
+<p>SADFASDF</p>
+</section>
+</section>
 </section>
 
     <script type="text/x-thebe-config">
@@ -434,6 +530,33 @@
             </div>
             
             
+              
+                <dialog id="pst-secondary-sidebar-modal"></dialog>
+                <div id="pst-secondary-sidebar" class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#factoring">Factoring</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#removing-common-factors">Removing Common Factors</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#exercises">Exercises</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#grouping-terms">Grouping Terms</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#id1">Exercises</a></li>
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#factoring-quadratics">Factoring Quadratics</a></li>
+</ul>
+</li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#fractions">Fractions</a><ul class="nav section-nav flex-column">
+<li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#test2">TEST2</a></li>
+</ul>
+</li>
+</ul>
+  </nav></div>
+
+</div></div>
               
             
           </div>
