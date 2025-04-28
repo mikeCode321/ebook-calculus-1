@@ -1,1 +1,1 @@
-# Fundamentals of Algebra 
+# Funamentals of Alegbra

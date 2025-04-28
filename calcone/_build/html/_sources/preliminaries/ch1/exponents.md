@@ -210,7 +210,3 @@ print("Expression 3:\n", pretty(simplified_expr3))
 print("Expression 4:\n", pretty(simplified_expr4))
 print("Expression 5:\n", pretty(simplified_expr5))
 ```
-
-## Factoring
-
-## Fractions

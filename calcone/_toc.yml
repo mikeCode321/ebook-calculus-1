@@ -6,17 +6,4 @@ parts:
         - file: preliminaries/ch1/fundamentals-of-algebra.md
           sections:
             - file: preliminaries/ch1/exponents.md
-            - file: preliminaries/ch1/algebraic-expressions.md
-
-        - file: preliminaries/ch2/introduction-to-functions.md
-
-        - file: preliminaries/ch3/solving-equations-and-inequalities.md
-          
-        - file: preliminaries/ch4/advanced-topics-and-applications.md
-        
-        - file: preliminaries/ch5/essentials.md
-    
-      # - caption: Advanced Topics and Applications
-      #   chapters:
-      #     - file: logarithms
-      #     - file: combining-evaluation-graphing-and-solving
+            - file: preliminaries/ch1/factoring-and-fractions.md
